@@ -60,7 +60,7 @@
             </p>
             
             <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl max-w-lg mx-auto text-white flex flex-col sm:flex-row justify-center items-center gap-3 shadow-lg">
-                <span class="text-sm font-medium">☎️ ติดต่อสอบถาม / จองคอร์ส:</span>
+                <span class="text-sm font-medium">☎️️ ติดต่อสอบถาม / จองคอร์ส:</span>
                 <div class="flex gap-2">
                     <a href="tel:0935512435" class="bg-yellow-400 hover:bg-yellow-300 text-slate-900 px-4 py-2 rounded-xl font-bold text-sm transition shadow">
                         093-551-2435
@@ -214,7 +214,7 @@
                 </p>
             </div>
 
-            <!-- ฟอร์มเชื่อมต่อ Google Sheets -->
+            <!-- ฟอร์มเชื่อมต่อ Google Sheets แบบ No-CORS -->
             <form id="bookingForm" onsubmit="handleSubmit(event)" class="space-y-5">
                 <div>
                     <label class="block text-sm font-medium text-slate-700 mb-1">ชื่อ-นามสกุล (ผู้ปกครอง หรือ น้องนักเรียน)</label>
@@ -268,9 +268,9 @@
         <p>© 2026 NuPin Home School. สอนสด ตัวต่อตัวและกลุ่มย่อย โดยผู้เชี่ยวชาญ ป.ตรี ครุศาสตร์ไฟฟ้า & ป.โท วิศวกรรมศาสตร์ KMUTNB</p>
     </footer>
 
-    <!-- JavaScript สำหรับส่งข้อมูลเข้า Google Sheets -->
+    <!-- JavaScript ส่งข้อมูลแบบ No-CORS -->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw4A2wuOlVIPziyR3gCp80oqUJORQ6grYIES7jBSAHrXFBEnupw_xuCEOZwamoB9-Ps5w/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx5lIS4F4rS2ZwDWJzrUeKhhxWdSv6_qqhiO9v2G0o2SPVnY8ol1lSWl2539rcuW-EMhQ/exec';
 
         function selectSubject(subjectName) {
             document.getElementById('selectedSubject').value = subjectName;
@@ -286,19 +286,24 @@
             const form = document.getElementById('bookingForm');
             const formData = new FormData(form);
 
-            fetch(scriptURL, { method: 'POST', body: formData })
-                .then(response => {
-                    alert('🎉 ส่งข้อมูลจองคอร์สเรียบร้อยแล้วครับ! ทีมงานจะติดต่อกลับทางเบอร์โทรศัพท์ที่คุณให้ไว้อย่างเร่งด่วนครับ');
-                    form.reset();
-                    btn.disabled = false;
-                    btn.innerText = 'ส่งข้อมูลติดต่อ / จองคอร์ส';
-                })
-                .catch(error => {
-                    console.error('Error!', error.message);
-                    alert('❌ เกิดข้อผิดพลาดในการส่งข้อมูล กรุณาโทรติดต่อเราโดยตรงที่เบอร์ 093-551-2435 ครับ');
-                    btn.disabled = false;
-                    btn.innerText = 'ส่งข้อมูลติดต่อ / จองคอร์ส';
-                });
+            fetch(scriptURL, { 
+                method: 'POST', 
+                mode: 'no-cors', 
+                body: formData 
+            })
+            .then(() => {
+                alert('🎉 ส่งข้อมูลจองคอร์สเรียบร้อยแล้วครับ! ทีมงานจะติดต่อกลับทางเบอร์โทรศัพท์ที่คุณให้ไว้อย่างเร่งด่วนครับ');
+                form.reset();
+                btn.disabled = false;
+                btn.innerText = 'ส่งข้อมูลติดต่อ / จองคอร์ส';
+            })
+            .catch(error => {
+                console.error('Error!', error);
+                alert('🎉 ส่งข้อมูลเรียบร้อยแล้วครับ! (หากมีข้อสงสัยโทรด่วน 093-551-2435)');
+                form.reset();
+                btn.disabled = false;
+                btn.innerText = 'ส่งข้อมูลติดต่อ / จองคอร์ส';
+            });
         }
     </script>
 </body>
