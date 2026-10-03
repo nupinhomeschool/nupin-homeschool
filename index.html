@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NuPin Home School - กวดวิชาตัวต่อตัวและกลุ่มย่อย โดยผู้เชี่ยวชาญพระจอมเกล้าฯ</title>
+    <title>NuPin Home School - กวดวิชาตัวต่อตัวและกลุ่มย่อย พระราม 5 บางกรวย นนทบุรี</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,37 +16,41 @@
     <!-- Marquee Announcement Banner (ตัวอักษรวิ่งดึงดูดความสนใจ) -->
     <div class="bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-700 text-white py-2.5 overflow-hidden shadow-inner font-semibold text-sm">
         <marquee behavior="scroll" direction="left" scrollamount="5">
-            ✨ ยินดีต้อนรับสู่ <span class="text-yellow-300 font-bold">NuPin Home School</span> 🏡 เรียนกลุ่มย่อย (ไม่เกิน 6 คน) & ตัวต่อตัว | รับสอน ภาษาอังกฤษ, คณิตศาสตร์, เคมี | ป.1 ถึง ม.ต้น โดยผู้เชี่ยวชาญ ป.ตรี ครุศาสตร์ไฟฟ้า & ป.โท วิศวกรรมศาสตร์ KMUTNB | ☎️ โทร: 093-551-2435, 081-923-2380 สนใจติดต่อสอบถามหรือดาวน์โหลดแบบฝึกหัดได้เลยครับ! 🚀
+            ✨ ยินดีต้อนรับสู่ <span class="text-yellow-300 font-bold">NuPin Home School</span> 🏡 พิกัด: ย่านพระราม 5 - บางกรวย - เมืองนนทบุรี | เรียนกลุ่มย่อย (ไม่เกิน 6 คน) & ตัวต่อตัว | รับสอน ภาษาอังกฤษ, คณิตศาสตร์, เคมี | ป.1 - ม.ต้น โดยผู้เชี่ยวชาญ ป.ตรี ครุศาสตร์ไฟฟ้า & ป.โท วิศวกรรมศาสตร์ KMUTNB | ☎️ โทรด่วน: 093-551-2435, 081-923-2380 🚀
         </marquee>
     </div>
 
     <!-- Navbar -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <span class="bg-emerald-600 text-white p-2 rounded-xl font-bold text-xl">🏡</span>
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="bg-emerald-600 text-white p-2.5 rounded-xl font-bold text-xl shadow-sm">🏡</span>
                 <div>
-                    <span class="text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent block">NuPin Home School</span>
-                    <span class="text-xs text-emerald-700 font-semibold block">📞 093-551-2435, 081-923-2380</span>
+                    <span class="text-lg md:text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent block leading-tight">NuPin Home School</span>
+                    <span class="text-xs text-slate-500 font-medium block">📍 พระราม 5 - บางกรวย - นนทบุรี</span>
                 </div>
             </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-medium items-center">
+            <nav class="hidden lg:flex space-x-5 text-sm font-medium items-center">
                 <a href="#tutor" class="hover:text-emerald-600 transition">ประวัติผู้สอน</a>
+                <a href="#location" class="hover:text-emerald-600 transition">สถานที่ตั้ง</a>
                 <a href="#worksheets" class="hover:text-emerald-600 transition text-emerald-600 font-bold">📄 ดาวน์โหลดใบงาน</a>
                 <a href="#gallery" class="hover:text-emerald-600 transition">บรรยากาศการสอน</a>
-                <a href="#about" class="hover:text-emerald-600 transition">จุดเด่นของเรา</a>
                 <a href="#subjects" class="hover:text-emerald-600 transition">วิชาที่เปิดสอน</a>
-                <a href="#booking" class="hover:text-emerald-600 transition">ติดต่อสอบถาม</a>
             </nav>
-            <a href="#booking" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-sm font-medium transition shadow-sm">จองเวลาเรียน</a>
+            <div class="flex items-center gap-2">
+                <a href="tel:0935512435" class="bg-emerald-50 text-emerald-700 hover:bg-emerald-100 px-3 py-2 rounded-xl text-xs md:text-sm font-bold transition flex items-center gap-1 border border-emerald-200">
+                    📞 093-551-2435
+                </a>
+                <a href="#booking" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl text-xs md:text-sm font-medium transition shadow-sm hidden sm:inline-block">จองเวลาเรียน</a>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-900 text-white py-20 px-4">
         <div class="max-w-4xl mx-auto text-center space-y-6">
-            <span class="inline-block bg-emerald-500/30 text-emerald-200 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-400/30">
-                ✨ ประสบการณ์สอนมากกว่า 20 ปี | ป.ตรี ครุศาสตร์ไฟฟ้า & ป.โท วิศวกรรมศาสตร์ KMUTNB
+            <span class="inline-block bg-emerald-500/30 text-emerald-200 text-xs font-semibold px-3 py-1.5 rounded-full uppercase tracking-wider border border-emerald-400/30">
+                ✨ พิกัด: พระราม 5 - บางกรวย - เมืองนนทบุรี | สอนโดยวิศวะพระจอมเกล้าฯ (KMUTNB)
             </span>
             <h1 class="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
                 NuPin Home School <br><span class="text-yellow-400">เรียนกลุ่มย่อย & ตัวต่อตัว</span>
@@ -54,9 +58,20 @@
             <p class="text-lg text-emerald-100 max-w-2xl mx-auto font-light">
                 เสริมสร้างกระบวนการคิดวิเคราะห์ ต่อยอดทักษะทางตรรกะ คณิตศาสตร์ วิทยาศาสตร์ และภาษาอังกฤษ สำหรับเด็กๆ ประถม - มัธยมต้น
             </p>
-            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl max-w-md mx-auto text-emerald-100 text-sm font-medium">
-                📞 สายด่วนผู้ปกครอง: <a href="tel:0935512435" class="text-yellow-300 font-bold hover:underline">093-551-2435</a>, <a href="tel:0819232380" class="text-yellow-300 font-bold hover:underline">081-923-2380</a>
+            
+            <!-- Call Box -->
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl max-w-lg mx-auto text-white flex flex-col sm:flex-row justify-center items-center gap-3 shadow-lg">
+                <span class="text-sm font-medium">☎️ ติดต่อสอบถาม / จองคอร์ส:</span>
+                <div class="flex gap-2">
+                    <a href="tel:0935512435" class="bg-yellow-400 hover:bg-yellow-300 text-slate-900 px-4 py-2 rounded-xl font-bold text-sm transition shadow">
+                        093-551-2435
+                    </a>
+                    <a href="tel:0819232380" class="bg-yellow-400 hover:bg-yellow-300 text-slate-900 px-4 py-2 rounded-xl font-bold text-sm transition shadow">
+                        081-923-2380
+                    </a>
+                </div>
             </div>
+
             <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
                 <a href="#worksheets" class="bg-yellow-400 hover:bg-yellow-300 text-slate-900 font-semibold px-8 py-3.5 rounded-xl shadow-lg transition">
                     📥 ดาวน์โหลดแบบฝึกหัด Ex.1 - Ex.16
@@ -68,8 +83,24 @@
         </div>
     </section>
 
+    <!-- Location Highlight Section -->
+    <section id="location" class="py-12 px-4 max-w-5xl mx-auto">
+        <div class="bg-emerald-50 border border-emerald-100 p-8 rounded-3xl text-center space-y-3 shadow-sm">
+            <span class="text-3xl">📍</span>
+            <h2 class="text-2xl font-bold text-slate-900">สถานที่ตั้งและการเดินทาง</h2>
+            <p class="text-slate-600 text-base max-w-xl mx-auto">
+                ตั้งอยู่ในทำเลสะดวกย่าน <strong class="text-emerald-700">พระราม 5 - บางกรวย - เมืองนนทบุรี</strong> เดินทางง่าย บรรยากาศบ้านสวนอบอุ่น ปลอดภัย และเอื้อต่อการเรียนรู้สมาธิของเด็กๆ
+            </p>
+            <div class="pt-2 flex justify-center gap-4">
+                <a href="tel:0935512435" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-2.5 rounded-xl text-sm transition shadow-sm">
+                    📞 โทรสอบถามเส้นทาง 093-551-2435
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Worksheets Download Section (Ex.1 - Ex.16) -->
-    <section id="worksheets" class="py-16 px-4 max-w-7xl mx-auto">
+    <section id="worksheets" class="py-16 px-4 max-w-7xl mx-auto border-t border-slate-200/60">
         <div class="text-center mb-12">
             <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-md">คลังความรู้ & ฝึกฝน</span>
             <h2 class="text-3xl font-bold text-slate-900 mt-2">ดาวน์โหลดแบบฝึกหัดตัวอย่าง (Ex.1 - Ex.16)</h2>
@@ -114,7 +145,7 @@
                     <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-md">ผู้ก่อตั้งและผู้สอนหลัก</span>
                     <h2 class="text-2xl md:text-3xl font-bold text-slate-900">ปริญญาตรี ครุศาสตร์ไฟฟ้า & ปริญญาโท วิศวกรรมศาสตร์</h2>
                     <p class="text-emerald-700 font-medium text-sm">มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (KMUTNB)</p>
-                    <p class="text-slate-500 text-sm">ประสบการณ์คลุกคลีและทุ่มเทกับการสอนเด็กๆ มากกว่า 20 ปี</p>
+                    <p class="text-slate-500 text-sm">ประสบการณ์คลุกคลีและทุ่มเทกับการสอนเด็กๆ มากกว่า 20 ปี (ย่านพระราม 5 - บางกรวย)</p>
                 </div>
             </div>
 
@@ -139,20 +170,20 @@
                         <div class="text-xs text-slate-500 mt-0.5">ปริญญาโท (KMUTNB)</div>
                     </div>
                     <div class="bg-slate-50 p-3 rounded-xl text-center border border-slate-100">
-                        <div class="font-bold text-emerald-600 text-base">System & Logic</div>
-                        <div class="text-xs text-slate-500 mt-0.5">ผู้เชี่ยวชาญระบบควบคุม</div>
+                        <div class="font-bold text-emerald-600 text-base">พระราม 5 - นนทบุรี</div>
+                        <div class="text-xs text-slate-500 mt-0.5">สถานที่ตั้งสะดวก</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section (Real Atmosphere - Images 1 to 11 with descriptions) -->
+    <!-- Gallery Section (Real Atmosphere - Images 1 to 11) -->
     <section id="gallery" class="py-16 px-4 max-w-7xl mx-auto">
         <div class="text-center mb-12">
             <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-md">บรรยากาศห้องเรียนจริง</span>
             <h2 class="text-3xl font-bold text-slate-900 mt-2">อบอุ่น เป็นกันเอง และใส่ใจใกล้ชิด</h2>
-            <p class="text-slate-500 mt-1">ภาพบรรยากาศการเรียนการสอนจริง (ภาพที่ 1 - 11) กลุ่มย่อยและตัวต่อตัว เพื่อการเรียนรู้ที่มีประสิทธิภาพสูงสุด</p>
+            <p class="text-slate-500 mt-1">ภาพบรรยากาศการเรียนการสอนจริง (ภาพที่ 1 - 11) ย่านพระราม 5 - บางกรวย นนทบุรี</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6">
@@ -196,7 +227,7 @@
                 <div class="overflow-hidden aspect-[4/3] bg-slate-100"><img src="8.jpg" alt="บรรยากาศการเรียน" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80';"></div>
                 <div class="p-4 text-center"><p class="text-sm font-medium text-slate-700">✏️ ภาพที่ 8: กลุ่มย่อยไม่เกิน 6 คน ดูแลทั่วถึงทุกคน</p></div>
             </div>
-            <!-- ภาพที่ 10 (ข้ามมาภาพ 10 ตามลำดับไฟล์) -->
+            <!-- ภาพที่ 10 -->
             <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 group">
                 <div class="overflow-hidden aspect-[4/3] bg-slate-100"><img src="10.jpg" alt="บรรยากาศการเรียน" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80';"></div>
                 <div class="p-4 text-center"><p class="text-sm font-medium text-slate-700">🤝 ภาพที่ 10: พูดคุยแลกเปลี่ยนกับผู้ปกครองอย่างอบอุ่น</p></div>
@@ -214,7 +245,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-slate-900">ทำไมต้องเรียนกับ NuPin Home School?</h2>
-                <p class="text-slate-500 mt-2">บรรยากาศอบอุ่น เป็นกันเอง และมุ่งเน้นผลสัมฤทธิ์ของน้องๆ เป็นสำคัญ</p>
+                <p class="text-slate-500 mt-2">บรรยากาศอบอุ่น เป็นกันเอง ย่านพระราม 5 - บางกรวย และมุ่งเน้นผลสัมฤทธิ์</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -241,7 +272,7 @@
     <section id="subjects" class="py-16 px-4 max-w-7xl mx-auto">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-slate-900">วิชาที่เปิดรับสอน</h2>
-            <p class="text-slate-500 mt-2">ระดับประถมศึกษา ถึง มัธยมศึกษาตอนต้น</p>
+            <p class="text-slate-500 mt-2">ระดับประถมศึกษา ถึง มัธยมศึกษาตอนต้น (ย่านพระราม 5 - บางกรวย นนทบุรี)</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
@@ -309,7 +340,9 @@
         <div class="max-w-2xl mx-auto bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-slate-100">
             <div class="text-center mb-8">
                 <h2 class="text-2xl font-bold text-slate-900">📝 ติดต่อสอบถาม / จองเวลาเรียน</h2>
-                <p class="text-slate-500 text-sm mt-1">โทรด่วน: <span class="text-emerald-600 font-bold">093-551-2435, 081-923-2380</span> หรือกรอกข้อมูลด้านล่างได้เลยครับ</p>
+                <p class="text-slate-500 text-sm mt-1">
+                    โทรด่วน: <a href="tel:0935512435" class="text-emerald-600 font-bold hover:underline">093-551-2435</a>, <a href="tel:0819232380" class="text-emerald-600 font-bold hover:underline">081-923-2380</a> (พระราม 5 - บางกรวย นนทบุรี) หรือกรอกข้อมูลด้านล่างได้เลยครับ
+                </p>
             </div>
 
             <form onsubmit="handleSubmit(event)" class="space-y-5">
@@ -360,7 +393,8 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-10 px-4 text-center text-sm space-y-2">
-        <p class="text-white font-semibold text-base">NuPin Home School 📞 โทร: 093-551-2435, 081-923-2380</p>
+        <p class="text-white font-semibold text-base">NuPin Home School 📍 พิกัด: พระราม 5 - บางกรวย นนทบุรี</p>
+        <p class="text-emerald-400 font-bold text-base">📞 โทร: 093-551-2435, 081-923-2380</p>
         <p>© 2026 NuPin Home School. สอนสด ตัวต่อตัวและกลุ่มย่อย โดยผู้เชี่ยวชาญ ป.ตรี ครุศาสตร์ไฟฟ้า & ป.โท วิศวกรรมศาสตร์ KMUTNB</p>
     </footer>
 
@@ -379,7 +413,7 @@
             const subject = document.getElementById('selectedSubject').value;
             const format = document.getElementById('format').value;
             
-            alert(`🎉 ขอบคุณคุณ ${name} มากครับ!\n\nเราได้รับข้อมูลความสนใจวิชา "${subject}" (${format}) สำหรับระดับชั้น ${grade} เรียบร้อยแล้ว ทีมงานจะติดต่อกลับทางเบอร์ ${phone} หรือคุณสามารถโทรหาเราได้ที่ 093-551-2435 / 081-923-2380 ครับ`);
+            alert(`🎉 ขอบคุณคุณ ${name} มากครับ!\n\nเราได้รับข้อมูลความสนใจวิชา "${subject}" (${format}) สำหรับระดับชั้น ${grade} เรียบร้อยแล้ว ทีมงานจะติดต่อกลับทางเบอร์ ${phone} หรือโทรหาเราได้ที่ 093-551-2435 / 081-923-2380 ครับ`);
             event.target.reset();
         }
     </script>
