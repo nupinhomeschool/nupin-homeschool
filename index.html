@@ -1,4 +1,26 @@
-<!-- JavaScript ส่งข้อมูลแบบ No-CORS -->
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจองคอร์ส</title>
+</head>
+<body>
+
+    <!-- ฟอร์มตัวอย่างสำหรับใช้งานร่วมกับ Script -->
+    <div id="booking">
+        <form id="bookingForm" onsubmit="handleSubmit(event)">
+            <input type="hidden" id="selectedSubject" name="subject" value="">
+            
+            <!-- ตัวอย่างปุ่มเลือกวิชา -->
+            <button type="button" onclick="selectSubject('คอร์ส 1')">เลือกคอร์ส 1</button>
+
+            <!-- ช่องกรอกข้อมูลอื่นๆ ตามต้องการ -->
+            <button type="submit" id="submitBtn">ส่งข้อมูลติดต่อ / จองคอร์ส</button>
+        </form>
+    </div>
+
+    <!-- JavaScript ส่งข้อมูลแบบ No-CORS ของคุณ -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyS1PbHoFKh_icXq4vP3Kbp4tMEcZqzNeFqifDV-lbG2UxszIdZ0JfUWkQzw157Wbiq6g/exec';
 
@@ -36,3 +58,5 @@
             });
         }
     </script>
+</body>
+</html>
